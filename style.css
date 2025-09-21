@@ -70,7 +70,7 @@ header nav ul li a:hover {
    =========================== */
 .hero {
   position: relative;
-  background: url("bg1.webp") center/cover no-repeat;
+  background: url("images/bg1.webp") center/cover no-repeat;
   height: 90vh;
   display: flex;
   justify-content: center;
@@ -365,3 +365,4 @@ footer span {
     flex-direction: column;
   }
 }
+
