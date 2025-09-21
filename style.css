@@ -70,7 +70,7 @@ header nav ul li a:hover {
    =========================== */
 .hero {
   position: relative;
-  background: url("https://harshaninganna.github.io/Memorable-Events-/images/bg1.webp") center/cover no-repeat;
+  background: url("images/bg1.webp") center/cover no-repeat;
   height: 90vh;
   display: flex;
   justify-content: center;
@@ -365,5 +365,6 @@ footer span {
     flex-direction: column;
   }
 }
+
 
 
