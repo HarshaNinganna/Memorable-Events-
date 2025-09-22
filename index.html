@@ -27,7 +27,14 @@
     </ul>
   </nav>
 </header>
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const navbar = document.getElementById("navbar");
 
+  menuToggle.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+  });
+</script>
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
@@ -358,6 +365,7 @@ const images = [
 </body>
 
 </html>
+
 
 
 
