@@ -313,7 +313,6 @@ const images = [
 
   <button type="submit" class="btn">Send on WhatsApp</button>
 </form>
-
 <script>
   function sendToWhatsApp(event) {
     event.preventDefault(); // stop form from refreshing
@@ -340,21 +339,25 @@ const images = [
     // WhatsApp Number (replace with your number)
     let phoneNumber = "917483463766"; // Your WhatsApp number in international format
 
-    // Create message
-    let message = `New Event Booking Request:%0A
- Name: ${name}%0A
- Event Type: ${eventType}%0A
- Mobile: ${mobile}%0A
- Alt Mobile: ${altMobile || "N/A"}%0A
- Theme: ${theme}%0A
- Venue: ${venue}%0A
- Date: ${date}`;
+    // Create message (encode each field safely)
+    let message = `New Event Booking Request:\n
+Name: ${name}\n
+Event Type: ${eventType}\n
+Mobile: ${mobile}\n
+Alt Mobile: ${altMobile || "N/A"}\n
+Theme: ${theme}\n
+Venue: ${venue}\n
+Date: ${date}`;
+
+    // Encode safely for WhatsApp
+    let encodedMessage = encodeURIComponent(message);
 
     // Open WhatsApp
-    let url = `https://wa.me/${phoneNumber}?text=${message}`;
+    let url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     window.open(url, "_blank");
   }
 </script>
+
   </div>
 </section>
 
@@ -365,6 +368,7 @@ const images = [
 </body>
 
 </html>
+
 
 
 
