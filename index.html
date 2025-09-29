@@ -5,9 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Memorable Events</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- Put this inside the <head> of your HTML -->
-<link rel="icon" type="image/png" 
-      href="https://raw.githubusercontent.com/HarshaNinganna/Memorable-Events-/main/images/logo.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,7 +21,7 @@
       <li><a href="#">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
-      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#stall-activities">Activities/Stall</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -91,43 +88,110 @@
   </div>
 </section>
 
+<section class="Stall">
+  <div class="stall-activities">
+    <h4>Activities</h4>
+    <div id="activities-container">
+      <!-- Activity Items -->
+      <div class="stall-box">
+        <img src="images/tattoo.jpg" alt="Tattoo">
+        <h5>Tattoo</h5>
+        <p>Creative temporary tattoos with safe colors.<br>Fun for all age groups.</p>
+      </div>
+      <div class="stall-box">
+        <img src="images/magic-show.jpg" alt="Magic Show">
+        <h5>Magic Show</h5>
+        <p>Witness amazing tricks and illusions.<br>Entertainment for the crowd.</p>
+      </div>
+      <div class="stall-box">
+        <img src="images/mc-anchor.png" alt="MC Anchor">
+        <h5>MC Anchor</h5>
+        <p>Interactive host to engage the audience.<br>Conducts games & activities.</p>
+      </div>
+      <div class="stall-box">
+        <img src="images/caricature.jpg" alt="Caricature">
+        <h5>Caricature</h5>
+        <p>Funny cartoon portraits drawn live.<br>Take home a memory!</p>
+      </div>
+      <div class="stall-box">
+        <img src="images/balloon-modelling.jpg" alt="Balloon Modelling">
+        <h5>Balloon Modelling</h5>
+        <p>Twisting balloons into fun shapes.<br>Kids will absolutely love it.</p>
+      </div>
+      <div class="stall-box">
+        <img src="images/balloon-shooting.jpg" alt="Balloon Shooting">
+        <h5>Balloon Shooting</h5>
+        <p>Test your aim and pop balloons to win exciting prizes!<br>Fun for all ages.</p>
+      </div>
+    </div>
+
+    <h4>Stalls</h4>
+    <div id="stalls-container">
+      <!-- Stall Items -->
+      <div class="stall-box">
+        <img src="images/chocolate-fountain.jpg" alt="Chocolate Fountain">
+        <h5>Chocolate Fountain</h5>
+        <p>Delicious flowing chocolate.<br>Dip fruits & marshmallows!</p>
+      </div>
+      <div class="stall-box">
+        <img src="images/cotton-candy.jpg" alt="Cotton Candy">
+        <h5>Cotton Candy</h5>
+        <p>Fluffy, sweet cotton candy.<br>Always a crowd favorite!</p>
+      </div>
+      <div class="stall-box">
+        <img src="images/popcorn.jpg" alt="Popcorn">
+        <h5>Popcorn</h5>
+        <p>Fresh hot popcorn served.<br>Perfect for snacking.</p>
+      </div>
+    </div>
+
+    <button class="btn">Know More...</button>
+  </div>
+</section>
+
 <section class="Recent">
   <div class="recent-activities">
     <h4>Recent Activities</h4>
-    <div id="insta-feed"></div>
+
+    <div class="insta-grid">
+      <!-- Post 1 -->
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGYdM0vyfxH/" data-instgrm-version="14"></blockquote>
+
+      <!-- Post 2 -->
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C-CNwklpzsM/" data-instgrm-version="14"></blockquote>
+
+      <!-- Post 3 -->
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DKXILdbP-xk/" data-instgrm-version="14"></blockquote>
+
+      <!-- Post 4 -->
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DI6S6geJAFx/" data-instgrm-version="14"></blockquote>
+
+      <!-- Post 5 -->
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DDyVKcepr5C/" data-instgrm-version="14"></blockquote>
+
+      <!-- Post 6 -->
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DC9VL2hyDtC/" data-instgrm-version="14"></blockquote>
+
+      <!-- Post 7 -->
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DBbiGnyyNBA/" data-instgrm-version="14"></blockquote>
+
+      <!-- Post 8 -->
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C-P4sHwJGvL/" data-instgrm-version="14"></blockquote>
+
+      <!-- Post 9 -->
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C7I6BKHL7Q0/" data-instgrm-version="14"></blockquote>
+
+      <!-- Post 10 -->
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C6liZ6Fr7lG/" data-instgrm-version="14"></blockquote>
+    </div>
+
     <button class="btn">Follow Us on Instagram</button>
   </div>
 </section>
 
-<style>
-/* Recent Activities */
-.Recent { padding:50px 20px; text-align:center; }
-.recent-activities { max-width:800px; margin:0 auto; background:#fff; border-radius:12px; padding:30px; box-shadow:0 4px 12px rgba(0,0,0,0.08); }
-.recent-activities h4 { font-size:1.8rem; margin-bottom:20px; color:#333; font-weight:600; }
-#insta-feed { display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:15px; margin-bottom:25px; }
-#insta-feed img { width:100%; height:120px; object-fit:cover; border-radius:10px; transition:transform 0.3s ease, box-shadow 0.3s ease; }
-#insta-feed img:hover { transform:scale(1.05); box-shadow:0 4px 12px rgba(0,0,0,0.2); }
-
-/* Instagram Gradient Button */
-.recent-activities .btn {
-  display:inline-block;
-  padding:12px 25px;
-  font-weight:bold;
-  color:#fff;
-  border:none;
-  border-radius:8px;
-  cursor:pointer;
-  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-  background-size: 200% 200%;
-  transition: all 0.4s ease;
-}
-
-.recent-activities .btn:hover {
-  background-position: 100% 0;
-  transform: scale(1.05);
-  color: #fff;
-}
-</style>
+<!-- Instagram Embed Script -->
+<script async src="https://www.instagram.com/embed.js"></script>
+</section>
 
 <!-- Contact Section -->
 <section class="contact" id="contact">
@@ -138,70 +202,82 @@
     <div class="contact-info">
   <p><strong><i class="fas fa-map-marker-alt"></i> Address:</strong> No 2&3, MNR residency, Bus Stop, near Hosapalya, Sector 1, Hosapalaya, Muneshwara Nagar, Bengaluru, Karnataka 560068</p>
   <p><strong><i class="fas fa-phone-alt"></i> Phone:</strong> 
-    <a href="tel:+919876543210">+91 98765 43210</a>
+    <a href="tel:+917483463766">+91 7483463766</a>
   </p>
   <p><strong><i class="fas fa-envelope"></i> Email:</strong> 
-    <a href="mailto:info@example.com">info@example.com</a>
+    <a href="mailto:info@example.com">memorableevents12622@gmail.com</a>
   </p>
 
   <!-- Action Icons -->
   <div class="contact-actions">
-    <a href="tel:+919876543210" class="icon-btn"><i class="fas fa-phone-alt"></i></a>
-    <a href="mailto:info@example.com" class="icon-btn"><i class="fas fa-envelope"></i></a>
-    <a href="https://wa.me/919876543210?text=Kindly%20share%20the%20details%20to%20understand%20your%20requirement%20and%20assist%20you%20further...%0A1.Your%20Good%20Name:%0A2.Occasion%20(e.g%20Birthday%20Anniversary%20etc)%0A3.Date%20%0A4.Location(Area%20in%20Bangalore)%0A5.Theme%20(if%20your%20looking%20for%20birthday%20decoration)%0A6.Age%20of%20baby%20(boy/girl)%0A7.Type%20YES%20if%20Photography%20Videography%20Required%20%0A8.Type%20YES%20for%20our%20Activities%20list%20%0A9.Additional%20message%20(if%20any)" 
+    <a href="tel:+917483463766" class="icon-btn"><i class="fas fa-phone-alt"></i></a>
+    <a href="mailto:memorableevents12622@gmail.com" class="icon-btn"><i class="fas fa-envelope"></i></a>
+    <a href="https://wa.me/917483463766?text=Kindly%20share%20the%20details%20to%20understand%20your%20requirement%20and%20assist%20you%20further...%0A1.Your%20Good%20Name:%0A2.Occasion%20(e.g%20Birthday%20Anniversary%20etc)%0A3.Date%20%0A4.Location(Area%20in%20Bangalore)%0A5.Theme%20(if%20your%20looking%20for%20birthday%20decoration)%0A6.Age%20of%20baby%20(boy/girl)%0A7.Type%20YES%20if%20Photography%20Videography%20Required%20%0A8.Type%20YES%20for%20our%20Activities%20list%20%0A9.Additional%20message%20(if%20any)" 
        target="_blank" class="icon-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
     <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.505148918742!2d77.5946!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670f4c3f3e3%3A0xabc123456789!2sMemorable%20Events%20Bangalore!5e0!3m2!1sen!2sin!4v1724820000000"
-    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" 
-    referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.150911922382!2d77.64267000999332!3d12.89801598735814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15b6e05bdeaf%3A0x866f97e4bfa40852!2sMemorable%20Events!5e0!3m2!1sen!2sin!4v1759144563856!5m2!1sen!2sin" 
+  width="100%" 
+  height="250" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
   </div>
 </div>
 </div>
 
-    <!-- Contact Form -->
-     
-    <form class="contact-form" onsubmit="sendToWhatsApp(event)">
-      <h4>Hii Buddy! <br>
+<form class="contact-form" onsubmit="sendToWhatsApp(event)">
+  <h4>Hello!
 Thank you for Choosing Memorable Events
-We are complete Party Planners who takes care of any events.</h4>
-      <input type="text" id="name" placeholder="Your Good Name" required>
-      <input type="text" id="occasion" placeholder="Occasion (e.g Birthday)">
-      <input type="date" id="date">
-      <input type="text" id="location" placeholder="Location (Area in Bangalore)">
-      <input type="text" id="theme" placeholder="Theme (optional)">
-      <input type="text" id="age" placeholder="Age of baby (boy/girl)">
-      <select id="photography">
-        <option value="">Photography/Videography?</option>
-        <option>YES</option>
-        <option>NO</option>
-      </select>
-      <select id="activities">
-        <option value="">Need Activities List?</option>
-        <option>YES</option>
-        <option>NO</option>
-      </select>
-      <textarea id="message" placeholder="Additional message"></textarea>
-      <button type="submit">Send on WhatsApp</button>
-    </form>
-  </div>
-</section>
 
+We are complete Party Planners who take care of any events. Kindly share the details to understand your requirement and assist you further...</h4>
+  <input type="text" id="name" placeholder="Your Good Name" required>
+  <input type="text" id="occasion" placeholder="Occasion (e.g Birthday)">
+  <input type="date" id="date">
+  <input type="text" id="location" placeholder="Location (Area in Bangalore)">
+  <select id="theme">
+    <option value="">Basic/Theme/Standard?</option>
+    <option>Basic</option>
+    <option>Theme</option>
+    <option>Standard</option>
+  </select>
+  <input type="text" id="age" placeholder="Age of baby (boy/girl)">
+  <select id="photography">
+    <option value="">Photography/Videography?</option>
+    <option>YES</option>
+    <option>NO</option>
+  </select>
+  <select id="activities">
+    <option value="">Need Activities List?</option>
+    <option>YES</option>
+    <option>NO</option>
+  </select>
+  <textarea id="message" placeholder="Additional message"></textarea>
+  <button type="submit">Send on WhatsApp</button>
+</form>
 <script>
 function sendToWhatsApp(event) {
-  event.preventDefault();
+  event.preventDefault(); // prevent form reload
 
-  let name = document.getElementById("name").value;
-  let occasion = document.getElementById("occasion").value;
-  let date = document.getElementById("date").value;
-  let location = document.getElementById("location").value;
-  let theme = document.getElementById("theme").value;
-  let age = document.getElementById("age").value;
-  let photography = document.getElementById("photography").value;
-  let activities = document.getElementById("activities").value;
-  let message = document.getElementById("message").value;
+  // Get user input
+  const name = document.getElementById("name").value || "N/A";
+  const occasion = document.getElementById("occasion").value || "N/A";
+  const date = document.getElementById("date").value || "N/A";
+  const location = document.getElementById("location").value || "N/A";
+  const theme = document.getElementById("theme").value || "N/A";
+  const age = document.getElementById("age").value || "N/A";
+  const photography = document.getElementById("photography").value || "N/A";
+  const activities = document.getElementById("activities").value || "N/A";
+  const message = document.getElementById("message").value || "N/A";
 
-  let text = `Kindly share the details to understand your requirement and assist you further...
+  // Build message
+  const text = `Hello!
+Thank you for Choosing Memorable Events
+
+We are complete Party Planners who take care of any events. Kindly share the details to understand your requirement and assist you further...
+
 1. Your Good Name: ${name}
 2. Occasion: ${occasion}
 3. Date: ${date}
@@ -212,38 +288,23 @@ function sendToWhatsApp(event) {
 8. Activities list: ${activities}
 9. Additional message: ${message}`;
 
-  let url = "https://wa.me/918867132911?text=" + encodeURIComponent(text);
+  // WhatsApp link
+  const phone = "917483463766"; // your number in international format
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+
+  // Open WhatsApp
   window.open(url, "_blank");
 }
 </script>
-
-<style>
-.contact { padding:60px 20px; background:#111; text-align:center; color:#fff; }
-.contact-container { display:flex; gap:30px; flex-wrap:wrap; justify-content:center; }
-.contact-info { flex:1; min-width:280px; text-align:left; }
-.contact-info a { color:#25D366; text-decoration:none; }
-.contact-actions { margin:15px 0; }
-.icon-btn { font-size:24px; margin-right:15px; text-decoration:none; }
-.map-container { margin-top:15px; border-radius:10px; overflow:hidden; }
-.contact-form { flex:1; min-width:280px; display:flex; flex-direction:column; gap:10px; }
-.contact-form input, .contact-form select, .contact-form textarea, .contact-form button {
-  padding:10px; border-radius:6px; border:none;
-}
-.contact-form textarea { min-height:80px; resize:vertical; }
-.contact-form button {
-  background: linear-gradient(45deg, #25D366, #128C7E, #075E54);
-  color:#fff; font-weight:bold; cursor:pointer; transition:0.3s;
-}
-.contact-form button:hover { background:#25D366; }
-</style>
+</section>
 
 <!-- Footer -->
+
 <footer>
   <p>&copy; 2025 <span>Memorable Events</span>. All Rights Reserved.</p>
+
 </footer>
 
 <script src="script.js"></script>
 </body>
 </html>
-
-
