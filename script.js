@@ -66,7 +66,24 @@ const galleries = {
   currentPage: 1,
   perPage: 3
 }
-  standard: { id:"standardGallery", pageNum:"standardPageNum", images:["images/gal11.jpg","images/gal12.jpg","images/gal13.jpg","images/gal14.jpg","images/gal15.jpg"], currentPage:1, perPage:3 }
+  standard: {
+  id: "standardGallery",
+  pageNum: "standardPageNum",
+  images: [
+    "images/Standard/standard1.jpg",
+    "images/Standard/standard2.jpg",
+    "images/Standard/standard3.jpg",
+    "images/Standard/standard4.jpg",
+    "images/Standard/standard5.jpg",
+    "images/Standard/standard6.jpg",
+    "images/Standard/standard7.jpg",
+    "images/Standard/standard8.jpg",
+    "images/Standard/standard9.jpg"
+  ],
+  currentPage: 1,
+  perPage: 3
+}
+
 };
 function renderGallery(type){
   const gallery=galleries[type];
@@ -119,6 +136,7 @@ fetch(apiURL)
   console.error("Instagram fetch error:",err);
   document.getElementById("insta-feed").innerText="Unable to load posts.";
 });
+
 
 
 
