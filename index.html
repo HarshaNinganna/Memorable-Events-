@@ -204,40 +204,36 @@
         referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </div>
-
-    <!-- WhatsApp Form -->
-    <form class="contact-form" onsubmit="sendToWhatsApp(event)">
-      <h4>Hello!
-      Thank you for Choosing Memorable Events</h4>
-      <input type="text" id="name" placeholder="Your Good Name" required>
-      <input type="text" id="occasion" placeholder="Occasion (e.g Birthday)">
-      <input type="date" id="date">
-      <input type="text" id="location" placeholder="Location (Area in Bangalore)">
-      <select id="theme">
-        <option value="">Basic/Theme/Standard?</option>
-        <option>Basic</option>
-        <option>Theme</option>
-        <option>Standard</option>
-      </select>
-      <input type="text" id="age" placeholder="Age of baby (boy/girl)">
-      <select id="photography">
-        <option value="">Photography/Videography?</option>
-        <option>YES</option>
-        <option>NO</option>
-      </select>
-      <select id="activities">
-        <option value="">Need Activities List?</option>
-        <option>YES</option>
-        <option>NO</option>
-      </select>
-      <textarea id="message" placeholder="Additional message"></textarea>
-      <button type="submit">Send on WhatsApp</button>
-    </form>
-
   </div>
-</section>
 
-<!-- WhatsApp Script -->
+<form class="contact-form" onsubmit="sendToWhatsApp(event)">
+  <h4>Hello!
+  Thank you for Choosing Memorable Events</h4>
+  <input type="text" id="name" placeholder="Your Good Name" required>
+  <input type="text" id="occasion" placeholder="Occasion (e.g Birthday)">
+  <input type="date" id="date">
+  <input type="text" id="location" placeholder="Location (Area in Bangalore)">
+  <select id="theme">
+    <option value="">Basic/Theme/Standard?</option>
+    <option>Basic</option>
+    <option>Theme</option>
+    <option>Standard</option>
+  </select>
+  <input type="text" id="age" placeholder="Age of baby (boy/girl)">
+  <select id="photography">
+    <option value="">Photography/Videography?</option>
+    <option>YES</option>
+    <option>NO</option>
+  </select>
+  <select id="activities">
+    <option value="">Need Activities List?</option>
+    <option>YES</option>
+    <option>NO</option>
+  </select>
+  <textarea id="message" placeholder="Additional message"></textarea>
+  <button type="submit" onclick="sendToWhatsApp(event)">Send on WhatsApp</button>
+</form>
+
 <script>
 function sendToWhatsApp(event) {
   event.preventDefault(); 
@@ -252,7 +248,10 @@ function sendToWhatsApp(event) {
   const activities = document.getElementById("activities").value || "N/A";
   const message = document.getElementById("message").value || "N/A";
 
-  const text = `Hello! Thank you for Choosing Memorable Events
+  const text = `Hello!✨
+Thank you for Choosing Memorable Events
+
+We are complete Party Planners who takes care of any events.💫
 
 1. Your Good Name: ${name}
 2. Occasion: ${occasion}
@@ -264,11 +263,12 @@ function sendToWhatsApp(event) {
 8. Activities list: ${activities}
 9. Additional message: ${message}`;
 
-  const phone = "917483463766";
+  const phone = "917483463766"; // +91 India code
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
   window.open(url, "_blank");
 }
 </script>
+
 
 <!-- Footer -->
 <footer>
@@ -278,3 +278,4 @@ function sendToWhatsApp(event) {
 <script src="script.js"></script>
 </body>
 </html>
+
