@@ -65,7 +65,7 @@ const galleries = {
   ],
   currentPage: 1,
   perPage: 3
-}
+},
   standard: {
   id: "standardGallery",
   pageNum: "standardPageNum",
@@ -136,6 +136,7 @@ fetch(apiURL)
   console.error("Instagram fetch error:",err);
   document.getElementById("insta-feed").innerText="Unable to load posts.";
 });
+
 
 
 
