@@ -49,7 +49,23 @@ const galleries = {
   currentPage: 1, 
   perPage: 3 
 },
-  theme: { id:"themeGallery", pageNum:"themePageNum", images:["images/gal6.jpg","images/gal7.jpg","images/gal8.jpg","images/gal9.jpg","images/gal10.jpg"], currentPage:1, perPage:3 },
+  theme: {
+  id: "themeGallery",
+  pageNum: "themePageNum",
+  images: [
+    "images/Theme/Theme1.jpg",
+    "images/Theme/Theme2.jpg",
+    "images/Theme/Theme3.jpg",
+    "images/Theme/Theme4.jpg",
+    "images/Theme/Theme5.jpg",
+    "images/Theme/Theme6.jpg",
+    "images/Theme/Theme7.jpg",
+    "images/Theme/Theme8.jpg",
+    "images/Theme/Theme9.jpg"
+  ],
+  currentPage: 1,
+  perPage: 3
+}
   standard: { id:"standardGallery", pageNum:"standardPageNum", images:["images/gal11.jpg","images/gal12.jpg","images/gal13.jpg","images/gal14.jpg","images/gal15.jpg"], currentPage:1, perPage:3 }
 };
 function renderGallery(type){
@@ -103,6 +119,7 @@ fetch(apiURL)
   console.error("Instagram fetch error:",err);
   document.getElementById("insta-feed").innerText="Unable to load posts.";
 });
+
 
 
 
